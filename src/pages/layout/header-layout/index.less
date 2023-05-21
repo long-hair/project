@@ -1,0 +1,47 @@
+.layout-header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+
+  &--content {
+    display: flex;
+    height: 100%;
+    width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__menu {
+      flex: 0.8;
+      display: flex;
+
+      .menu {
+        &--item {
+          cursor: pointer;
+          height: 100%;
+          padding: 0 3.4rem;
+          line-height: 80px;
+          text-align: center;
+          white-space: nowrap;
+          font-size: 16px;
+          color: #727171;
+          
+          &:hover {
+            background-color: #378cc6;
+          }
+        }
+        &--select {
+          color: #378cc6;
+        }
+      }
+     
+
+    }
+  }
+}
+
+.header-logo {
+  width: 100px;
+  height: 75px;
+}

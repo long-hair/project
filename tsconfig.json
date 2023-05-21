@@ -21,8 +21,10 @@
     "jsx": "react-jsx",
     "baseUrl": "./",
     "paths": {
-      "@pages/*":["src/pages"],
-      "@business/*":["src/business"],
+      "@": ["src/*"],
+      "@pages/*": ["src/pages/*"],
+      "@business/*": ["src/business/*"],
+      "@assets/*": ["src/assets/*"],
     }
   },
   
