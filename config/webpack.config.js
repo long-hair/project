@@ -805,5 +805,18 @@ module.exports = function (webpackEnv) {
     // Turn off performance processing because we utilize
     // our own hints via the FileSizeReporter
     performance: false,
+    devServer: {
+      client: {
+        overlay: {
+          runtimeErrors: (error) => {
+            console.log(error.message,'************')
+            if (error.message === "ResizeObserver loop limit exceeded") {
+              return false;
+            }
+            return true;
+          }
+        },
+      },
+    },
   };
 };

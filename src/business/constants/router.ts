@@ -1,3 +1,7 @@
+export enum UrlParams  {
+  AboutMenu = 'aboutMenu', 
+} 
+
 export enum Router {
   Home = '/home',//首页
   About = '/about',//关于

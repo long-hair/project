@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import type { MenuProps } from 'antd';
-import { Menu } from 'antd';
+import React  from 'react';
+import  './index.less'
 
 /**
  * 首页
@@ -10,7 +9,7 @@ import { Menu } from 'antd';
 const Home:React.FC = () => {
 
 
-  return <div>1111</div>;
+  return <div className="home-content"></div>;
 };
 
 export default Home;
